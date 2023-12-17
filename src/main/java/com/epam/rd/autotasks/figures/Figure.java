@@ -1,15 +1,16 @@
 package com.epam.rd.autotasks.figures;
 
 
-abstract class Figure{
-    public abstract double area();//определение площади
+abstract class Figure {
 
-    public abstract String pointsToString();
+  public abstract double area();
 
-    public String toString() {
+  public abstract String pointsToString();
 
-        return this.getClass().getSimpleName() + "[" + pointsToString() + "]";
-    }
+  public String toString() {
 
-    public abstract Point leftmostPoint();
+    return this.getClass().getSimpleName() + "[" + pointsToString() + "]";
+  }
+
+  public abstract Point leftmostPoint();
 }
